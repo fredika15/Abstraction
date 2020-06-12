@@ -1,0 +1,23 @@
+using System;
+
+using Abstraction.Interface;
+namespace Abstraction
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            IPakaian pakaian;
+
+            pakaian = new kemeja();
+            pakaian.atasan();
+
+            Console.WriteLine();
+            pakaian = new kaos();
+            pakaian.atasan();
+
+            Console.ReadKey();
+        }
+    }
+}
